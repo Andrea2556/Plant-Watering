@@ -23,3 +23,7 @@ export function editPlant(id, newPlant) {
 export function deletePlant(id) {
   localStorage.removeItem(id);
 }
+
+export function getAllPlants() {
+  return Object.values(localStorage).map((x) => JSON.parse(x));
+}
