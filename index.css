@@ -1,3 +1,64 @@
-body {
-  background-color: cornsilk;
+.modal-body {
+  display: block;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+#nameInputDesign,
+#locationInputDesign,
+#intervalInputDesign,
+#imageInputDesign,
+#lastDayInputDesign {
+  border-radius: 7px;
+  margin-bottom: 6px;
+  width: 450px;
+  padding: 10px;
+}
+#addButtonColor {
+  background-color: green;
+  width: 150px;
+}
+#closeButtonColor {
+  background-color: red;
+  width: 100px;
+}
+#imgPlant {
+  width: 40px;
+}
+#imgPlus_circle {
+  margin-right: 1, 5px;
+  width: 30px;
+  align-content: center;
+  text-align: center;
+}
+#icon {
+  align-content: center;
+  margin-left: 45%;
+  margin-top: 30%;
+  background-color: transparent;
+  color: transparent;
+  border-color: none;
+}
+#searchPlant {
+  margin-left: 41%;
+  margin-top: 20px;
+  border-radius: 15px;
+}
+#input {
+  border-radius: 16px;
+  outline: none;
+}
+#searchIcon {
+  cursor: pointer;
+  left: 10px;
+  top: 5px;
+  position: absolute;
+}
+#searchForm {
+  margin-left: 10%;
+  position: relative;
+}
+.imgURL {
+  width: 40px;
+  height: 40px;
 }
