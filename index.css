@@ -62,3 +62,17 @@
   width: 40px;
   height: 40px;
 }
+.plants-characteristic_photo {
+  width: 60px;
+  height: 60px;
+  border-radius: 15%;
+}
+.plants-characteristics {
+  display: flex;
+  justify-content: space-evenly;
+}
+.plants-info {
+  display: flex;
+  justify-content: space-between;
+  width: 190px;
+}
