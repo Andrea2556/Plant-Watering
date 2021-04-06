@@ -9,9 +9,7 @@ function attachClickEventOnPlants() {
   console.log(rawPlantsHTML);
   rawPlantsHTML.forEach((x) => {
     x.addEventListener("click", function (e) {
-      console.log(e.currentTarget.id);
       const plantId = getPlant(e.currentTarget.id);
-      console.log(plantId);
     });
   });
 }
