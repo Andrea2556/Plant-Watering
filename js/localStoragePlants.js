@@ -1,22 +1,12 @@
-import { uuidv4 } from "./helpers.js";
-
-export function createPlant({ name, lastWatered, waterInterval, imgSrc }) {
-  const id = uuidv4();
-  localStorage.setItem(
-    id,
-    JSON.stringify({ id, name, lastWatered, waterInterval, imgSrc })
-  );
-}
-
 export function getPlant(id) {
   const storageValue = localStorage.getItem(id);
   if (storageValue) {
     return JSON.parse(storageValue);
   }
-  return undefined;
+  return null;
 }
 
-export function editPlant(id, newPlant) {
+export function setPlant(id, newPlant) {
   localStorage.setItem(id, JSON.stringify(newPlant));
 }
 
@@ -24,6 +14,10 @@ export function deletePlant(id) {
   localStorage.removeItem(id);
 }
 
+export function getAllKeys() {
+  return Object.keys(localStorage);
+}
+
 export function getAllPlants() {
-  return Object.values(localStorage).map((x) => JSON.parse(x));
+  return Object.values(localStorage).map((newPlant) => JSON.parse(newPlant));
 }
